@@ -1,0 +1,20 @@
+body {
+    margin: 0px;
+}
+
+.landing {
+    position: relative;
+}
+
+.landing::before {
+    content: "";
+    position: absolute;
+    filter: brightness(50%);
+    background-image: url("background.jpg");
+    width: 100%;
+    min-height: 1190px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
