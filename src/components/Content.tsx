@@ -5,12 +5,12 @@ import "../styles/Content.css";
 
 const Content = () => {
     return (
-        <div className="content">
+        <Row className="content">
             <img src="/images/ozone.svg" alt="ozone"/>
             <p>
                 臭氧脫硝設備
             </p>
-        </div>
+        </Row>
     );
 }
 
