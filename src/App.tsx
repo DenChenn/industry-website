@@ -1,15 +1,16 @@
-import React from "react";
-import {Col, Row} from 'react-flexbox-grid'
-import { BrowserRouter, Route, Switch } from "react-router-dom"
-import Landing from "./pages/Landing"
+import React from 'react'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import Landing from './pages/landing'
 function App() {
   return (
     <BrowserRouter>
-      <Switch>
-          <Route exact path="/" render={() => <Landing />} />
-      </Switch>
+      <div className="app-container">
+        <Switch>
+          <Route path="/" component={Landing}></Route>
+        </Switch>
+      </div>
     </BrowserRouter>
-  );
+  )
 }
 
-export default App;
+export default App
