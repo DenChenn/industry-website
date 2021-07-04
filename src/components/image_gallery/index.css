@@ -1,0 +1,66 @@
+.container {
+    position: relative;
+    padding: 10px;
+}
+
+.image-gallery {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.image-box {
+    width: 100%;
+}
+
+.image-box img{
+    opacity: 1;
+    display: block;
+    height: auto;
+    width: 100%;
+    transition: .3s ease; /* move smoothly*/
+    backface-visibility: hidden;
+}
+
+.image-box .title{
+    position: absolute; 
+    bottom: 10px; 
+    width: calc(100% - 20px) ; /*計算寬度*/
+    transition: .3s ease;
+}
+
+.image-box .title .text{
+    background-color: #00080167;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+
+.text {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+
+.information {
+    transition: .5s ease;
+    opacity: 0; /* 先射程透明的*/
+    position: absolute;
+    padding-left: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+}
+
+.container:hover img {
+    opacity: 0.3;
+}
+
+.container:hover .information {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+}
+
+.container:hover .image-box .title {
+    opacity: 0;
+    transform: translate(0%, 100%);
+}
