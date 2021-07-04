@@ -1,0 +1,8 @@
+.navbar-container {
+  position: fixed;
+  width: 100vw;
+  display: flex;
+  flex-direction: row-reverse;
+  height: 15vh;
+  z-index: 10;
+}
