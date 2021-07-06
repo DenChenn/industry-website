@@ -22,7 +22,7 @@
 .NavMenuContainer .NavList .NavLink a {
   text-decoration: none;
   color: #ffffff;
-  font-size: 18px;
+  font-size: 1.2em;
   transition: all 200ms ease-in-out;
 }
 
