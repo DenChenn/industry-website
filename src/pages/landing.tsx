@@ -63,8 +63,12 @@ const Landing = () => {
         <ImageGallery></ImageGallery>
       </div>
       <div className="section-3">
+        <div className="title">
+          <div className="large">這個是標題</div>
+        </div>
         <GridNav></GridNav>
       </div>
+      <div className="section-4"></div>
     </div>
   )
 }

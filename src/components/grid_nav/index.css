@@ -1,7 +1,7 @@
 .grid-nav-container {
   position: relative;
   width: 70%;
-  height: 40%;
+  height: 30%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,7 +10,8 @@
 .grid-nav-container .row {
   position: relative;
   width: 100%;
-  height: 30%;
+  height: 25%;
+  padding-top: 3%;
   display: flex;
   flex-direction: row;
   justify-content: center;

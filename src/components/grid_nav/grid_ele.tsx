@@ -13,7 +13,7 @@ const GridEle = (props: {
       <div className="content">
         <div className="title">
           <p>{props.contentTitle}</p>
-          <img src={props.svgLink} alt="svg-icon" />
+          <img src="images/right.svg" alt="svg-icon" />
         </div>
         <div className="detail">{props.contentDetail}</div>
       </div>
