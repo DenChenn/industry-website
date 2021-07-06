@@ -3,6 +3,7 @@ import './landing.css'
 import NavBar from '../components/navbar'
 import { motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
+import GridNav from '../components/grid_nav'
 
 const Landing = () => {
   const [isOpen, setOpen] = useState(false)
@@ -51,7 +52,18 @@ const Landing = () => {
         </div>
       </div>
       <div className="section-2">
+        <div className="title">
+          <p>這個是標題</p>
+        </div>
+        <div className="content">
+          <p>
+            這個是內容這個是內容這個是內容這個是內容這個是內容這個是內容這個是內容這個是內容
+          </p>
+        </div>
         <ImageGallery></ImageGallery>
+      </div>
+      <div className="section-3">
+        <GridNav></GridNav>
       </div>
     </div>
   )
