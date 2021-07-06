@@ -1,3 +1,10 @@
 body {
   margin: 0;
 }
+
+:root {
+  --border-color: #0e56c2;
+  --color-transparent: #0e56c2bd;
+  --page-color: #ffffff;
+  --second-page-color: #d6c6c6;
+}
