@@ -1,66 +1,80 @@
-.container {
-    position: relative;
-    padding: 10px;
+.image-gallery-container {
+  position: relative;
+  width: 70%;
+  height: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-.image-gallery {
-    margin-right: 20px;
-    margin-left: 20px;
-}
-.image-box {
-    width: 100%;
-}
-
-.image-box img{
-    opacity: 1;
-    display: block;
-    height: auto;
-    width: 100%;
-    transition: .3s ease; /* move smoothly*/
-    backface-visibility: hidden;
+.image-gallery-container .container {
+  position: relative;
+  width: 25%;
+  height: 100%;
+  margin: 1em;
+  overflow: hidden;
 }
 
-.image-box .title{
-    position: absolute; 
-    bottom: 10px; 
-    width: calc(100% - 20px) ; /*計算寬度*/
-    transition: .3s ease;
+.image-gallery-container .container .image-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
-.image-box .title .text{
-    background-color: #00080167;
-    color: white;
-    font-size: 16px;
-    text-align: center;
+.image-gallery-container .container .image-box img {
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  width: 100%;
+  transition: 0.3s ease;
+  backface-visibility: hidden;
 }
 
-.text {
-    background-color: #4CAF50;
-    color: white;
-    font-size: 16px;
-    text-align: center;
+.image-gallery-container .container .image-box .title {
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  bottom: 0;
+  transition: 0.3s ease;
+  background-color: #00080167;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.5em;
 }
 
-.information {
-    transition: .5s ease;
-    opacity: 0; /* 先射程透明的*/
-    position: absolute;
-    padding-left: 10px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -70%);
+.image-gallery-container .container .information {
+  position: absolute;
+  transition: 0.3s ease;
+  width: 100%;
+  height: 100%;
+  transform: translate(0%, 0%);
+  background-color: #ffffffbb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-gallery-container .container .information .text {
+  position: relative;
+  background-color: #578bda;
+  width: 50%;
+  height: 8%;
+  text-align: center;
+  color: #ffffff;
+  font-size: 1.6em;
+  cursor: pointer;
 }
 
 .container:hover img {
-    opacity: 0.3;
+  opacity: 0.3;
 }
 
 .container:hover .information {
-    opacity: 1;
-    transform: translate(-50%, -50%);
+  transform: translate(0%, -100%);
 }
 
 .container:hover .image-box .title {
-    opacity: 0;
-    transform: translate(0%, 100%);
+  opacity: 0;
+  transform: translate(0%, 100%);
 }
