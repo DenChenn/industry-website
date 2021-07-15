@@ -1,0 +1,24 @@
+.c-container {
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+
+.c-container .carousel {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel .thumb img {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.carousel .slide img {
+  height: 75vh; /* change this to whatever you want */
+  width: auto;
+}
+
+.carousel .slide .legend {
+  font-size: 1em;
+}
