@@ -1,0 +1,73 @@
+.footer-container {
+  position: relative;
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-container .right {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-container .right .title {
+  position: relative;
+  width: 100%;
+  height: 20%;
+  font-size: 2em;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.footer-container .right .feed {
+  position: relative;
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-container .right .feed .topic {
+  position: relative;
+  width: 30%;
+  height: 100%;
+  font-size: 1em;
+  color: #ffffff;
+}
+
+.footer-container .right .feed .detail {
+  position: relative;
+  width: 70%;
+  height: 100%;
+  font-size: 1em;
+  color: #ffffff;
+}
+
+.footer-container .left {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-container .left .title {
+  position: relative;
+  width: 100%;
+  height: 20%;
+  font-size: 2em;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.footer-container .left .content {
+  position: relative;
+  width: 60%;
+  height: 80%;
+  font-size: 1em;
+  color: #ffffff;
+}
