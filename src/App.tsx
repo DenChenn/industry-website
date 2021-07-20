@@ -7,6 +7,7 @@ function App() {
       <div className="app-container">
         <Switch>
           <Route path="/" component={Landing}></Route>
+          
         </Switch>
       </div>
     </BrowserRouter>

@@ -36,40 +36,59 @@ const Landing = () => {
   const [sec2Open, setSec2Open] = useState(false)
   const [sec3Open, setSec3Open] = useState(false)
   const [sec4Open, setSec4Open] = useState(false)
-  const sec2Ref = useRef<HTMLInputElement>(null)
-  const sec3Ref = useRef<HTMLInputElement>(null)
-  const sec4Ref = useRef<HTMLInputElement>(null)
+  const sec2Ref = useRef<HTMLDivElement>(null)
+  const sec3Ref = useRef<HTMLDivElement>(null)
+  const sec4Ref = useRef<HTMLDivElement>(null)
 
   useLayoutEffect(() => {
-    let sec2TopPos: number
-    let sec3TopPos: number
-    let sec4TopPos: number
-
-    if (sec2Ref != null) {
-      const sec2TopPos = sec2Ref.current?.getBoundingClientRect().top
-    }
-    if (sec3Ref != null) {
-      const sec3TopPos = sec3Ref.current?.getBoundingClientRect().top
-    }
-    if (sec4Ref != null) {
-      const sec4TopPos = sec4Ref.current?.getBoundingClientRect().top
-    }
+    const sec2TopPos = sec2Ref.current?.getBoundingClientRect().top
+    const sec3TopPos = sec3Ref.current?.getBoundingClientRect().top
+    const sec4TopPos = sec4Ref.current?.getBoundingClientRect().top
 
     const onScroll = () => {
       const scrollPosition = window.scrollY + window.innerHeight
-      if (sec2TopPos < scrollPosition) {
-        setSec2Open(true)
+      console.log(scrollPosition)
+
+      if (sec2Ref != null) {
+        if (sec2TopPos && sec2TopPos < scrollPosition) {
+          setSec2Open(true)
+        }
       }
-      if (sec3TopPos < scrollPosition) {
-        setSec3Open(true)
+      if (sec3Ref != null) {
+        if (sec3TopPos && sec3TopPos < scrollPosition) {
+          setSec3Open(true)
+        }
       }
-      if (sec4TopPos < scrollPosition) {
-        setSec4Open(true)
+      if (sec4Ref != null) {
+        if (sec4TopPos && sec4TopPos < scrollPosition) {
+          setSec4Open(true)
+        }
       }
     }
+
     window.addEventListener('scroll', onScroll)
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
+
+  const sectionVariant = {
+    open: {
+      opacity: 1,
+      transform: 'translateY(0%)',
+    },
+    closed: {
+      opacity: 0,
+      transform: 'translateY(50%)',
+    },
+  }
+
+  const sectionTransition = {
+    duration: 0.5,
+  }
+
+  const sectionDelayTransition = {
+    duration: 0.5,
+    delay: 0.3,
+  }
 
   return (
     <div className="landing-container">
@@ -94,27 +113,54 @@ const Landing = () => {
         </div>
       </div>
       <div className="section-2" ref={sec2Ref}>
-        <div className="title">
+        <motion.div
+          className="title"
+          animate={sec2Open ? 'open' : 'closed'}
+          variants={sectionVariant}
+          transition={sectionTransition}
+        >
           <p>公司理念</p>
-        </div>
-        <div className="content">
+        </motion.div>
+        <motion.div
+          className="content"
+          animate={sec2Open ? 'open' : 'closed'}
+          variants={sectionVariant}
+          transition={sectionDelayTransition}
+        >
           <p>{intro}</p>
-        </div>
+        </motion.div>
         <ImageGallery></ImageGallery>
       </div>
       <div className="section-3" ref={sec3Ref}>
         <div className="description-container">
-          <div className="title">合作夥伴</div>
-          <div className="content">
+          <motion.div
+            className="title"
+            animate={sec3Open ? 'open' : 'closed'}
+            variants={sectionVariant}
+            transition={sectionTransition}
+          >
+            合作夥伴
+          </motion.div>
+          <motion.div
+            className="content"
+            animate={sec3Open ? 'open' : 'closed'}
+            variants={sectionVariant}
+            transition={sectionDelayTransition}
+          >
             歐珊在中國的山東、江蘇、甘肅、浙江省皆有合作夥伴，以最專業的態度滿足客戶對於"環保、節能、效率"的追求。國舜西王特鋼的燒結機臭氧脫硝是山東首例，在江蘇鎮的江宏順熱電廠臭氧脫硝是江蘇首例、在甘肅慶陽的臭氧低溫脫硝是甘肅首例，在中國巨石集團的臭氧低溫脫硝不僅是浙江更是玻纖行業首例!歐珊掌握國際上最先進的放電技術、臭氧低溫氧化脫硝處理，一直走在環保與品質的最前端。
-          </div>
+          </motion.div>
         </div>
         <ImportCarousel />
       </div>
       <div className="section-4" ref={sec4Ref}>
-        <div className="title">
+        <motion.div
+          className="title"
+          animate={sec4Open ? 'open' : 'closed'}
+          variants={sectionVariant}
+          transition={sectionTransition}
+        >
           <div className="large">產品優點</div>
-        </div>
+        </motion.div>
         <GridNav></GridNav>
       </div>
       <div className="section-5">
