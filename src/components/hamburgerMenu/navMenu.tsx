@@ -33,7 +33,7 @@ const NavMenu = (props: { isOpen: Boolean }) => {
             },
           }}
         >
-          <Link to="/about">關於我們</Link>
+          <Link to="/about">首頁</Link>
         </motion.li>
         <motion.li
           className="NavLink"
@@ -50,7 +50,7 @@ const NavMenu = (props: { isOpen: Boolean }) => {
             },
           }}
         >
-          <Link to="/player">產品介紹</Link>
+          <Link to="/dinitro">脫硝系統</Link>
         </motion.li>
         <motion.li
           className="NavLink"
@@ -64,6 +64,23 @@ const NavMenu = (props: { isOpen: Boolean }) => {
             hide: {
               ...variants.hide,
               transition: { delay: 0.15, duration: 0.05 },
+            },
+          }}
+        >
+          <Link to="/small-match">臭氧產生器</Link>
+        </motion.li>
+        <motion.li
+          className="NavLink"
+          initial={false}
+          animate={props.isOpen ? 'show' : 'hide'}
+          variants={{
+            show: {
+              ...variants.show,
+              transition: { delay: 0.6, duration: 0.2 },
+            },
+            hide: {
+              ...variants.hide,
+              transition: { delay: 0.2, duration: 0.05 },
             },
           }}
         >
