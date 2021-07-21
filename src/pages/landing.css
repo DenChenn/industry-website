@@ -137,7 +137,7 @@
 .landing-container .section-4 {
   position: relative;
   width: 100%;
-  height: 110vh;
+  height: 130vh;
   background-color: var(--page-color);
   display: flex;
   flex-direction: column;
@@ -147,17 +147,30 @@
 
 .landing-container .section-4 .title {
   position: relative;
-  height: 30%;
+  width: 100%;
+  height: 50%;
   text-align: center;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .landing-container .section-4 .title .large {
   position: relative;
+  width: 20%;
+  height: 20%;
   border-bottom: solid 0.07em var(--border-color);
   font-size: 4em;
   color: var(--word-color);
+}
+
+.landing-container .section-4 .title .content {
+  position: relative;
+  width: 60%;
+  height: 30%;
+  margin-top: 10%;
+  color: var(--word-color);
+  font-size: 1.4em;
 }
 
 .landing-container .section-5 {

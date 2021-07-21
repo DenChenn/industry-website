@@ -32,6 +32,8 @@ const Landing = () => {
 
   const intro =
     '歐珊，始終堅持研發技術的創新與進步，本著“共享科技、體驗完美、貴於品質、恆於服務”的宗旨。為客戶提供最經濟、最完備的工業技術。為了系統的安全穩定，歐珊在既有工業技術上增加了各項設備保護，讓系統在自動化運行的情況下，將故障事故最小化。不只如此，系統也記錄了歷史資料記錄。幫助客戶掌握所有系統的時序資料，供日後分析以及系統優化。'
+  const proCons =
+    '歐珊講求高效、穩定的產品設備。除了反應選擇性高之外，更可以將汞、其他重金屬污染物同時氧化去汙，增加了產品的附加價值。歐珊以優質產品為傲，並以客戶滿意為最優先的考量。'
 
   const [sec2Open, setSec2Open] = useState(false)
   const [sec3Open, setSec3Open] = useState(false)
@@ -160,6 +162,7 @@ const Landing = () => {
           transition={sectionTransition}
         >
           <div className="large">產品優點</div>
+          <div className="content">{proCons}</div>
         </motion.div>
         <GridNav></GridNav>
       </div>
