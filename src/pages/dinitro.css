@@ -108,7 +108,7 @@
   width: 50%;
   height: auto;
   font-size: 4em;
-
+  text-align: center;
   color: var(--word-color);
   border-bottom: solid 0.07em var(--border-color);
 }
