@@ -35,7 +35,7 @@ const Dinitro = () => {
   const section4Title = 'BELCO® EDV®濕式脫硝洗脫技術'
   const section4Content =
     'BELCO® EDV®久經各種不同適性廠房的 考驗，適用於控制廠房廢氣排放。在多年的營運中，EDV®濕式洗滌系統無需停 機或排放調整即可穩定運行。EDV®濕洗脫系統在全球中，用於控制來自 FCCU、 煉油廠焚化爐、燃燒的氣體排放加熱器、鍋爐和其他工業應用的煙道。濕式洗滌 使用液體與煙道排氣接觸來去除酸性氣體、顆粒物和其他污染物。專有技術和性 能水平的提高讓 EDV® Wet Scrubbing 從眾多競爭者脫穎而出'
-  const section5Title = '傳統脫硫技術和我們的差異'
+  const section5Title = '傳統脫硝技術和我們的差異'
   const section5Content =
     '傳統濕式洗脫工 業技術在液氣接觸時需要產生精細(Fine)煙霧，以提高收集性能。也正是此”精細” 煙霧的產生和收集，導致傳統濕式洗脫法的不穩定。必須使用高效除霧器收集含 有污染物(非精細)的霧氣。固體和金屬鹽類會在除霧器表面快速積聚，導致堵塞 和維護問題。相較之下，EDV® 濕式洗脫避免形成任何霧氣，意味著沒有除霧器 問題。噴嘴和低壓滴罐使用大小固定的水滴來獲得有效氣體接觸。簡單的旋風分 離法可輕鬆去除任何氣體中的多餘水分。滴罐、噴嘴和液滴分離器是開放式的， 非常耐用，連續運行多年不停機。'
   const section6Title = 'LoTOxTM 運作流程'
@@ -74,21 +74,21 @@ const Dinitro = () => {
       </div>
       <div className="section-4">
         <LeftImage
-          imageUrl="images/oror.jpg"
+          imageUrl="images/belco_edv.png"
           title={section4Title}
           content={section4Content}
         ></LeftImage>
       </div>
       <div className="section-5">
         <RightImage
-          imageUrl="images/oror.jpg"
+          imageUrl="images/traditional.png"
           title={section5Title}
           content={section5Content}
         ></RightImage>
       </div>
       <div className="section-6">
         <LeftImage
-          imageUrl="images/oror.jpg"
+          imageUrl="images/lotox.png"
           title={section6Title}
           content={section6Content}
         ></LeftImage>

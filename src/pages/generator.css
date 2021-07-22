@@ -1,0 +1,185 @@
+.generator-container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+
+.generator-container .bg {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+
+.generator-container .bg img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Section 1 */
+
+.generator-container .section-1 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #00000069;
+  justify-content: center;
+  align-items: center;
+}
+
+.generator-container .section-1 .content {
+  position: relative;
+  width: 75%;
+  height: 20%;
+  margin-top: 5%;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  font-size: 4em;
+  font-weight: 1000;
+}
+.generator-container .section-1 .logo-container {
+  position: relative;
+  width: 10%;
+  height: auto;
+  justify-content: center;
+}
+
+.generator-container .section-1 .explore-icon {
+  position: relative;
+  width: 5%;
+  height: auto;
+  justify-content: center;
+  padding-top: 5%;
+}
+
+.generator-container .section-1 .explore-icon path {
+  stroke: white;
+  stroke-width: 8px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.generator-container .section-2 {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+.generator-container .section-2 .title {
+  position: relative;
+  width: 60%;
+  height: 30%;
+  color: var(--border-color);
+  font-size: 4em;
+  text-align: center;
+  font-weight: 600;
+}
+
+.generator-container .section-2 .content {
+  position: relative;
+  width: 60%;
+  height: 40%;
+  color: var(--word-color);
+  font-size: 1.4em;
+  text-align: center;
+}
+
+.generator-container .section-3 {
+  position: relative;
+  width: 100%;
+  height: 30vh;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.generator-container .section-3 .title {
+  position: relative;
+  width: 25%;
+  height: auto;
+  font-size: 3.5em;
+  text-align: center;
+  color: var(--word-color);
+  border-bottom: solid 0.07em var(--border-color);
+}
+
+.generator-container .section-4 {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.generator-container .section-5 {
+  position: relative;
+  width: 100%;
+  height: 120vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.generator-container .section-5 > .title {
+  position: relative;
+  width: 30%;
+  height: 20%;
+  color: var(--border-color);
+  font-size: 4em;
+  text-align: center;
+}
+
+.generator-container .section-5 .scale-list-outer {
+  position: relative;
+  width: 70%;
+  height: 40%;
+}
+
+.generator-container .section-6 {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.generator-container .section-7 {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.generator-container .section-8 {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-dark-transparent);
+  justify-content: center;
+  align-items: center;
+}
