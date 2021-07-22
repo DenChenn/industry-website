@@ -86,6 +86,23 @@ const NavMenu = (props: { isOpen: Boolean }) => {
         >
           <Link to="/small-match">原理說明</Link>
         </motion.li>
+        <motion.li
+          className="NavLink"
+          initial={false}
+          animate={props.isOpen ? 'show' : 'hide'}
+          variants={{
+            show: {
+              ...variants.show,
+              transition: { delay: 0.7, duration: 0.2 },
+            },
+            hide: {
+              ...variants.hide,
+              transition: { delay: 0.25, duration: 0.05 },
+            },
+          }}
+        >
+          <Link to="/small-match">九大優點</Link>
+        </motion.li>
       </div>
     </div>
   )

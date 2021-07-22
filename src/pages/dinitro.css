@@ -66,7 +66,7 @@
 .dinitro-container .section-2 {
   position: relative;
   width: 100%;
-  height: 50vh;
+  height: 60vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -81,6 +81,7 @@
   color: var(--border-color);
   font-size: 4em;
   text-align: center;
+  font-weight: 600;
 }
 
 .dinitro-container .section-2 .content {
@@ -95,7 +96,7 @@
 .dinitro-container .section-3 {
   position: relative;
   width: 100%;
-  height: 40vh;
+  height: 30vh;
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -105,9 +106,9 @@
 
 .dinitro-container .section-3 .title {
   position: relative;
-  width: 50%;
+  width: 25%;
   height: auto;
-  font-size: 4em;
+  font-size: 3.5em;
   text-align: center;
   color: var(--word-color);
   border-bottom: solid 0.07em var(--border-color);
@@ -116,7 +117,7 @@
 .dinitro-container .section-4 {
   position: relative;
   width: 100%;
-  height: 60vh;
+  height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -127,7 +128,7 @@
 .dinitro-container .section-5 {
   position: relative;
   width: 100%;
-  height: 60vh;
+  height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -138,7 +139,7 @@
 .dinitro-container .section-6 {
   position: relative;
   width: 100%;
-  height: 60vh;
+  height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
