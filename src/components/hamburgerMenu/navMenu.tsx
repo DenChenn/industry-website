@@ -33,7 +33,7 @@ const NavMenu = (props: { isOpen: Boolean }) => {
             },
           }}
         >
-          <Link to="/about">首頁</Link>
+          <Link to="/">首頁</Link>
         </motion.li>
         <motion.li
           className="NavLink"

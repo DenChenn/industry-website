@@ -88,6 +88,7 @@
   border-bottom: solid 0.07em var(--border-color);
   font-size: 4em;
   color: var(--word-color);
+  font-weight: 650;
 }
 
 .landing-container .section-2 .content {
@@ -162,6 +163,7 @@
   border-bottom: solid 0.07em var(--border-color);
   font-size: 4em;
   color: var(--word-color);
+  font-weight: 650;
 }
 
 .landing-container .section-4 .title .content {

@@ -1,14 +1,14 @@
-.left-image-container {
+.right-image-container {
   position: relative;
   width: 100%;
   height: 90%;
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
 }
 
-.left-image-container .left {
+.right-image-container .left {
   position: relative;
   width: 45%;
   height: 100%;
@@ -18,7 +18,7 @@
   justify-content: center;
 }
 
-.left-image-container .left .title {
+.right-image-container .left .title {
   position: relative;
   width: 100%;
   height: 20%;
@@ -28,7 +28,7 @@
   text-align: center;
 }
 
-.left-image-container .left .content {
+.right-image-container .left .content {
   position: relative;
   width: 100%;
   height: 60%;
@@ -37,13 +37,13 @@
   text-align: center;
 }
 
-.left-image-container .right {
+.right-image-container .right {
   position: relative;
   width: 40%;
   height: 100%;
 }
 
-.left-image-container .right img {
+.right-image-container .right img {
   position: relative;
   width: 100%;
   height: 100%;

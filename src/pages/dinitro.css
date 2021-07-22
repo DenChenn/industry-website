@@ -112,3 +112,47 @@
   color: var(--word-color);
   border-bottom: solid 0.07em var(--border-color);
 }
+
+.dinitro-container .section-4 {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.dinitro-container .section-5 {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.dinitro-container .section-6 {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.dinitro-container .section-7 {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-dark-transparent);
+  justify-content: center;
+  align-items: center;
+}

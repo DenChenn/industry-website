@@ -1,12 +1,12 @@
 import './index.css'
 
-const LeftImage = (props: {
+const RightImage = (props: {
   imageUrl: string
   title: string
   content: string
 }) => {
   return (
-    <div className="left-image-container">
+    <div className="right-image-container">
       <div className="left">
         <div className="title">{props.title}</div>
         <div className="content">{props.content}</div>
@@ -18,4 +18,4 @@ const LeftImage = (props: {
   )
 }
 
-export default LeftImage
+export default RightImage

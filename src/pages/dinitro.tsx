@@ -1,6 +1,9 @@
 import { useState, useEffect } from 'react'
 import NavBar from '../components/navbar'
 import { motion } from 'framer-motion'
+import LeftImage from '../components/left_image'
+import RightImage from '../components/right_image'
+import Footer from '../components/footer'
 import './dinitro.css'
 
 const Dinitro = () => {
@@ -26,6 +29,14 @@ const Dinitro = () => {
   useEffect(() => {
     setOpen(true)
   }, [])
+
+  const section4Title = '這個是標題'
+  const section4Content = '這個是內容容容容容JFODIJSDOFIJSDOFIJSDFOISDJ'
+  const section5Title = '這個是標題'
+  const section5Content = '這個是內容容容容容JFODIJSDOFIJSDOFIJSDFOISDJ'
+  const section6Title = '這個是標題'
+  const section6Content = '這個是內容容容容容JFODIJSDOFIJSDOFIJSDFOISDJ'
+
   return (
     <div className="dinitro-container">
       <div className="bg">
@@ -58,10 +69,30 @@ const Dinitro = () => {
       <div className="section-3">
         <div className="title">這個是標題這個是標題這個是標題</div>
       </div>
-      <div className="section-4"></div>
-      <div className="section-5"></div>
-      <div className="section-6"></div>
-      <div className="section-7"></div>
+      <div className="section-4">
+        <LeftImage
+          imageUrl="images/oror.jpg"
+          title={section4Title}
+          content={section4Content}
+        ></LeftImage>
+      </div>
+      <div className="section-5">
+        <RightImage
+          imageUrl="images/oror.jpg"
+          title={section5Title}
+          content={section5Content}
+        ></RightImage>
+      </div>
+      <div className="section-6">
+        <LeftImage
+          imageUrl="images/oror.jpg"
+          title={section6Title}
+          content={section6Content}
+        ></LeftImage>
+      </div>
+      <div className="section-7">
+        <Footer></Footer>
+      </div>
     </div>
   )
 }

@@ -39,7 +39,8 @@
   background-color: #00080167;
   color: #ffffff;
   text-align: center;
-  font-size: 1em;
+  font-size: 1.2em;
+  font-weight: 600;
 }
 
 .image-gallery-container .container .information {
