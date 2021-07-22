@@ -107,7 +107,7 @@ const Generator = () => {
       </div>
       <div className="section-7">
         <LeftImage
-          imageUrl="images/oror.jpg"
+          imageUrl="images/psu.jpg"
           title={section7Title}
           content={section7Content}
         ></LeftImage>
