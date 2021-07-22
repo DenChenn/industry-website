@@ -1,0 +1,51 @@
+.scale-list-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: solid 0.03em var(--border-color);
+  border-bottom: solid 0.03em var(--border-color);
+}
+
+.scale-list-container .row {
+  position: relative;
+  width: 100%;
+  height: 18%;
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.scale-list-container .row .title {
+  position: relative;
+  width: 90%;
+  height: 100%;
+  color: var(--word-color);
+  font-size: 1.5em;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.scale-list-container .row .arrow {
+  position: relative;
+  width: 10%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.scale-list-container .row .arrow img {
+  height: 50%;
+}
+
+.scale-list-container .row:hover {
+  transform: scale(0.95);
+}
