@@ -81,7 +81,7 @@ const Generator = () => {
       </div>
       <div className="section-4">
         <LeftImage
-          imageUrl="images/wedeco.jpg"
+          imageUrl="images/ozone_generate.gif"
           title={section4Title}
           content={section4Content}
         ></LeftImage>
