@@ -67,7 +67,7 @@ const NavMenu = (props: { isOpen: Boolean }) => {
             },
           }}
         >
-          <Link to="/small-match">臭氧產生器</Link>
+          <Link to="/generator">臭氧產生器</Link>
         </motion.li>
         <motion.li
           className="NavLink"
