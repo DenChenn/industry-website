@@ -84,7 +84,7 @@ const NavMenu = (props: { isOpen: Boolean }) => {
             },
           }}
         >
-          <Link to="/small-match">原理說明</Link>
+          <Link to="/concept">原理說明</Link>
         </motion.li>
         <motion.li
           className="NavLink"
