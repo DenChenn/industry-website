@@ -14,13 +14,19 @@
   position: relative;
   width: 100%;
   height: 18%;
-  display: flex;
-  flex-direction: row;
-  text-decoration: none;
   transition: all 0.2s ease-in-out;
 }
 
-.scale-list-container .row .title {
+.scale-list-container .row .row-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+}
+
+.scale-list-container .row .row-inner .title {
   position: relative;
   width: 88%;
   margin-left: 2%;
@@ -33,7 +39,7 @@
   justify-content: center;
 }
 
-.scale-list-container .row .arrow {
+.scale-list-container .row .row-inner .arrow {
   position: relative;
   width: 10%;
   height: 100%;
@@ -43,7 +49,7 @@
   align-items: center;
 }
 
-.scale-list-container .row .arrow img {
+.scale-list-container .row .row-inner .arrow img {
   height: 50%;
 }
 
