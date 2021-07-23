@@ -101,7 +101,7 @@ const NavMenu = (props: { isOpen: Boolean }) => {
             },
           }}
         >
-          <Link to="/small-match">九大優點</Link>
+          <Link to="/advantage">九大優點</Link>
         </motion.li>
       </div>
     </div>
