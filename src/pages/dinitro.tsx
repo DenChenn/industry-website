@@ -52,7 +52,7 @@ const Dinitro = () => {
       <NavBar></NavBar>
       <div className="section-1">
         <div className="logo-container">
-          <img width="100%" height="100%" src="images/dinitro.svg" alt="logo" />
+          <img width="100%" height="100%" src="images/logo.svg" alt="logo" />
         </div>
         <div className="content">低溫臭氧脫硝工業系統</div>
         <div className="explore-icon">

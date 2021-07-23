@@ -93,12 +93,7 @@ const Advantage = () => {
 
       <div className="section-1">
         <div className="logo-container">
-          <img
-            width="100%"
-            height="100%"
-            src="images/advantage_icon.svg"
-            alt="logo"
-          />
+          <img width="100%" height="100%" src="images/logo.svg" alt="logo" />
         </div>
         <div className="content">歐珊公司設備九大優點</div>
         <div className="explore-icon">

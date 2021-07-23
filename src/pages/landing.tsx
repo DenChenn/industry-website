@@ -102,7 +102,7 @@ const Landing = () => {
         <div className="logo-container">
           <img width="100%" height="100%" src="images/logo.svg" alt="logo" />
         </div>
-        <div className="content">歐珊股份有限公司</div>
+        <div className="content">歐珊環保科技股份有限公司</div>
         <div className="explore-icon">
           <svg width="100%" height="100%" viewBox="0 0 110 59" fill="none">
             <motion.path
