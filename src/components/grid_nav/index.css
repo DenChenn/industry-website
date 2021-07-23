@@ -16,3 +16,12 @@
   flex-direction: row;
   justify-content: center;
 }
+
+@media all and (max-width: 1000px) {
+  .grid-nav-container {
+    height: 70%;
+  }
+  .grid-nav-container .row {
+    flex-direction: column;
+  }
+}

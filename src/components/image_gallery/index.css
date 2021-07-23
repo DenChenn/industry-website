@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
 }
 
 .image-gallery-container .container {
@@ -89,4 +90,16 @@
 .container:hover .image-box .title {
   opacity: 0;
   transform: translate(0%, 100%);
+}
+
+@media all and (max-width: 1000px) {
+  .image-gallery-container {
+    flex-direction: column;
+    width: 100%;
+    height: 70%;
+  }
+  .image-gallery-container .container {
+    width: 80%;
+    height: 23%;
+  }
 }

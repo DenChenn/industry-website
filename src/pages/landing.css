@@ -154,6 +154,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .landing-container .section-4 .title .large {
@@ -184,4 +185,57 @@
   background-color: var(--color-dark-transparent);
   justify-content: center;
   align-items: center;
+}
+
+@media all and (max-width: 1000px) {
+  .landing-container .section-1 .content {
+    font-size: 2.5em;
+    width: 90%;
+  }
+  .landing-container .section-1 .logo-container {
+    width: 40%;
+  }
+  .landing-container .section-1 .logo-container {
+    width: 40%;
+  }
+  .landing-container .section-2 {
+    height: 300vh;
+  }
+
+  .landing-container .section-2 .title {
+    height: 10%;
+  }
+  .landing-container .section-2 .title p {
+    font-size: 2.5em;
+  }
+  .landing-container .section-2 .content {
+    height: 15%;
+    font-size: 1em;
+  }
+  .landing-container .section-3 {
+    flex-direction: column;
+    height: 150vh;
+  }
+  .landing-container .section-3 .description-container {
+    width: 100%;
+    height: 50%;
+  }
+  .landing-container .section-3 .description-container .title {
+    font-size: 2.5em;
+  }
+  .landing-container .section-3 .description-container .content {
+    font-size: 1em;
+  }
+  .landing-container .section-4 {
+    height: 180vh;
+  }
+  .landing-container .section-4 .title .large {
+    width: 60%;
+    height: 10%;
+    font-size: 2.5em;
+  }
+  .landing-container .section-4 .title .content {
+    height: 15%;
+    font-size: 1em;
+  }
 }
