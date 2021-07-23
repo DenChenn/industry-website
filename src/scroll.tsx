@@ -10,7 +10,7 @@ function ScrollToTop(props: { history: History }) {
     return () => {
       unlisten()
     }
-  }, [])
+  }, [props.history])
 
   return null
 }
