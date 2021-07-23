@@ -49,3 +49,26 @@
   width: 100%;
   height: 100%;
 }
+
+@media all and (max-width: 1000px) {
+  .left-image-container {
+    flex-direction: column-reverse;
+  }
+  .left-image-container .left {
+    width: 90%;
+    height: 45%;
+  }
+  .left-image-container .left .title {
+    font-size: 1.5em;
+    height: 10%;
+  }
+  .left-image-container .left .content {
+    font-size: 1em;
+    height: 70%;
+  }
+  .left-image-container .right {
+    width: 85%;
+    height: 45%;
+    padding-left: 0px;
+  }
+}

@@ -135,3 +135,32 @@
   justify-content: center;
   align-items: center;
 }
+
+@media all and (max-width: 1000px) {
+  .dinitro-container .section-1 .content {
+    font-size: 2.5em;
+    width: 90%;
+  }
+  .dinitro-container .section-1 .logo-container {
+    width: 40%;
+  }
+  .dinitro-container .section-1 .logo-container {
+    width: 40%;
+  }
+  .dinitro-container .section-3 {
+    height: 10vh;
+  }
+  .dinitro-container .section-3 .title {
+    font-size: 2.5em;
+    width: 70%;
+  }
+  .dinitro-container .section-4 {
+    height: 100vh;
+  }
+  .dinitro-container .section-5 {
+    height: 100vh;
+  }
+  .dinitro-container .section-6 {
+    height: 140vh;
+  }
+}

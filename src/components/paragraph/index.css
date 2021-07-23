@@ -27,3 +27,14 @@
   font-size: 1.4em;
   text-align: center;
 }
+
+@media all and (max-width: 1000px) {
+  .paragraph-container .title {
+    font-size: 2.5em;
+    width: 80%;
+  }
+  .paragraph-container .content {
+    font-size: 1em;
+    width: 80%;
+  }
+}
