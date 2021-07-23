@@ -53,3 +53,21 @@
   margin-top: 10%;
   font-size: 1.2em;
 }
+
+@media all and (max-width: 1000px) {
+  .demo-bar-container {
+    flex-direction: column;
+  }
+  .demo-bar-container .col {
+    width: 80%;
+    height: 30%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .demo-bar-container .col .topic {
+    font-size: 2em;
+  }
+  .demo-bar-container .col .content {
+    width: 90%;
+  }
+}
