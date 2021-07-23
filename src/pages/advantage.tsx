@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import NavBar from '../components/navbar'
 import DemoBar from '../components/demo_bar'
 import Footer from '../components/footer'
+import Paragraph from '../components/paragraph'
 
 const Advantage = () => {
   const [isOpen, setOpen] = useState(false)
@@ -113,8 +114,7 @@ const Advantage = () => {
       </div>
 
       <div className="section-2">
-        <div className="title">{section2Title}</div>
-        <div className="content">{section2Content}</div>
+        <Paragraph title={section2Title} content={section2Content}></Paragraph>
       </div>
 
       <div className="section-3">

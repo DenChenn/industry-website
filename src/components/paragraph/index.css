@@ -1,0 +1,29 @@
+.paragraph-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+.paragraph-container .title {
+  position: relative;
+  width: 60%;
+  height: 30%;
+  color: var(--border-color);
+  font-size: 4em;
+  text-align: center;
+  font-weight: 600;
+}
+
+.paragraph-container .content {
+  position: relative;
+  width: 60%;
+  height: 40%;
+  color: var(--word-color);
+  font-size: 1.4em;
+  text-align: center;
+}

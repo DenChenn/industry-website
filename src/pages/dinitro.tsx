@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import LeftImage from '../components/left_image'
 import RightImage from '../components/right_image'
 import Footer from '../components/footer'
+import Paragraph from '../components/paragraph'
 import './dinitro.css'
 
 const Dinitro = () => {
@@ -41,7 +42,7 @@ const Dinitro = () => {
     '傳統濕式洗脫工 業技術在液氣接觸時需要產生精細(Fine)煙霧，以提高收集性能。也正是此”精細” 煙霧的產生和收集，導致傳統濕式洗脫法的不穩定。必須使用高效除霧器收集含 有污染物(非精細)的霧氣。固體和金屬鹽類會在除霧器表面快速積聚，導致堵塞 和維護問題。相較之下，EDV® 濕式洗脫避免形成任何霧氣，意味著沒有除霧器 問題。噴嘴和低壓滴罐使用大小固定的水滴來獲得有效氣體接觸。簡單的旋風分 離法可輕鬆去除任何氣體中的多餘水分。滴罐、噴嘴和液滴分離器是開放式的， 非常耐用，連續運行多年不停機。'
   const section6Title = 'LoTOxTM 運作流程'
   const section6Content =
-    '為了控制 NOx 排放，BELCO® EDV® Wet Scrubbing System 使用 Linde 集團的 LoTOxTM工業技術。在 LoTOxTM工業技術中，NOx 被 臭氧氧化形成高價化合物，可以很容易地和顆粒、SOx 從煙道排氣中透過液氣 接觸去除。過程非常適合 FCCU 應用的需求。以噴嘴將熱煙道排氣驟冷至飽 和，並將其注入 EDV®的反應區。在此反應區以多點逆流式佈氣系統注入臭氧 (O3)。而臭氧選擇性地氧化 NOx 成 N2O5。當氧化飽和後，N2O5 和水蒸氣結合 形成硝酸。離開反應區之後，剩餘的氣體(包括 SO2 的吸收和顆粒物)以吸收器噴霧和過濾模組洗脫'
+    '為了控制 NOx 排放，BELCO® EDV® Wet Scrubbing System 使用 Linde 集團的 LoTOx™工業技術。在 LoTOx™工業技術中，NOx 被臭氧氧化形成高價化合物，可以很容易地和顆粒、SOx 從煙道排氣中透過液氣接觸去除。過程非常適合 FCCU 應用的需求。以噴嘴將熱煙道排氣驟冷至飽和，並將其注入 EDV®的反應區。在此反應區以多點逆流式佈氣系統注入臭氧（O3）。而臭氧選擇性地氧化 NOX成 N2O5。當氧化飽和後，N2O5 和水蒸氣結合形成硝酸。離開反應區之後，剩餘的氣體（包括 SO2 的吸收和顆粒物）以吸收器噴霧和過濾模組洗脫。LoTOxTM 除了可以有效處理範圍廣泛的氮氧化物和有害污染物、也可與各種空氣污染控制（APC）設備結合使用、而且能夠滿足不斷變化的 NOx 排放相關法規。不僅如此，LoTOxTM 無需修改現有的燃燒設備或將煙道排氣重新加熱至高溫。且相比於傳統減排過程，無須儲存所需的危險化學品亦為其優勢所在）'
 
   return (
     <div className="dinitro-container">
@@ -67,8 +68,7 @@ const Dinitro = () => {
       </div>
 
       <div className="section-2">
-        <div className="title">{section2Title}</div>
-        <div className="content">{section2Content}</div>
+        <Paragraph title={section2Title} content={section2Content}></Paragraph>
       </div>
       <div className="section-3">
         <div className="title">脫硝系統介紹</div>

@@ -3,6 +3,7 @@ import NavBar from '../components/navbar'
 import { motion } from 'framer-motion'
 import { useState, useEffect } from 'react'
 import Footer from '../components/footer'
+import Paragraph from '../components/paragraph'
 
 const Concept = () => {
   const [isOpen, setOpen] = useState(false)
@@ -62,16 +63,13 @@ const Concept = () => {
       </div>
 
       <div className="section-2">
-        <div className="title">{section2Title}</div>
-        <div className="content">{section2Content}</div>
+        <Paragraph title={section2Title} content={section2Content}></Paragraph>
       </div>
       <div className="section-2">
-        <div className="title">{section3Title}</div>
-        <div className="content">{section3Content}</div>
+        <Paragraph title={section3Title} content={section3Content}></Paragraph>
       </div>
       <div className="section-2">
-        <div className="title">{section4Title}</div>
-        <div className="content">{section4Content}</div>
+        <Paragraph title={section4Title} content={section4Content}></Paragraph>
       </div>
       <div className="section-5">
         <Footer></Footer>
