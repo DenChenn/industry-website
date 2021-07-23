@@ -1,4 +1,5 @@
 import './index.css'
+import { Link } from 'react-router-dom'
 
 const ImageGallery = () => {
   return (
@@ -15,7 +16,9 @@ const ImageGallery = () => {
             EDV®濕洗脫系統在全球範圍內用於控制來自 FCCU、煉油廠焚化爐、燃燒的
             氣體排放加熱器、鍋爐和其他工業應用的煙道。
           </p>
-          <div className="text">瞭解更多</div>
+          <Link className="text" to="/dinitro">
+            瞭解更多
+          </Link>
         </div>
       </div>
       <div className="container">
@@ -29,7 +32,9 @@ const ImageGallery = () => {
             被臭氧氧化形成高價化合物，可以很容易地和顆粒、SOx
             從煙道排氣中透過液氣接觸去除。
           </p>
-          <div className="text">瞭解更多</div>
+          <Link className="text" to="/dinitro">
+            瞭解更多
+          </Link>
         </div>
       </div>
       <div className="container">
@@ -43,7 +48,9 @@ const ImageGallery = () => {
             化)、操作簡單、堅固的設計可在惡劣的環境條件下運行、低維護成本，都是重
             視效率的客戶的不二之選
           </p>
-          <div className="text">learn more</div>
+          <Link className="text" to="/generator">
+            瞭解更多
+          </Link>
         </div>
       </div>
       <div className="container">
@@ -58,7 +65,9 @@ const ImageGallery = () => {
             電極的每個電極由高壓電極、不銹鋼網和電介質玻璃管組成放置在接地管內。臭氧在內部和外部的玻璃
             間隙中產生。
           </p>
-          <div className="text">learn more</div>
+          <Link className="text" to="/generator">
+            瞭解更多
+          </Link>
         </div>
       </div>
     </div>

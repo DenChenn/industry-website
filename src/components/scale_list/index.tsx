@@ -92,7 +92,7 @@ const ScaleList = (props: {
         variants={innerVariant}
         transition={transition1}
       >
-        <Link to="/" className="row-inner">
+        <Link to="/concept" className="row-inner">
           <div className="title">{props.title1}</div>
           <div className="arrow">
             <img src="images/right.svg" alt="#" />
@@ -105,7 +105,7 @@ const ScaleList = (props: {
         variants={innerVariant}
         transition={transition2}
       >
-        <Link to="/" className="row-inner">
+        <Link to="/concept" className="row-inner">
           <div className="title">{props.title2}</div>
           <div className="arrow">
             <img src="images/right.svg" alt="#" />
@@ -118,7 +118,7 @@ const ScaleList = (props: {
         variants={innerVariant}
         transition={transition3}
       >
-        <Link to="/" className="row-inner">
+        <Link to="/concept" className="row-inner">
           <div className="title">{props.title3}</div>
           <div className="arrow">
             <img src="images/right.svg" alt="#" />
@@ -131,7 +131,7 @@ const ScaleList = (props: {
         variants={innerVariant}
         transition={transition4}
       >
-        <Link to="/" className="row-inner">
+        <Link to="/concept" className="row-inner">
           <div className="title">{props.title4}</div>
           <div className="arrow">
             <img src="images/right.svg" alt="#" />
@@ -144,7 +144,7 @@ const ScaleList = (props: {
         variants={innerVariant}
         transition={transition5}
       >
-        <Link to="/" className="row-inner">
+        <Link to="/concept" className="row-inner">
           <div className="title">{props.title5}</div>
           <div className="arrow">
             <img src="images/right.svg" alt="#" />

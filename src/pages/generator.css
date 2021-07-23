@@ -89,6 +89,7 @@
   text-align: center;
   color: var(--word-color);
   border-bottom: solid 0.07em var(--border-color);
+  font-weight: 600;
 }
 
 .generator-container .section-4 {
@@ -120,6 +121,7 @@
   color: var(--border-color);
   font-size: 4em;
   text-align: center;
+  font-weight: 600;
 }
 
 .generator-container .section-5 .scale-list-outer {

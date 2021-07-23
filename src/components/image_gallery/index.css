@@ -58,16 +58,20 @@
 
 .image-gallery-container .container .information .text {
   position: relative;
-  background-color: #578bda;
+  background-color: var(--border-color);
   width: 50%;
   height: 8%;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   color: #ffffff;
-  font-size: 1em;
+  font-size: 1.1em;
+  font-weight: 600;
   cursor: pointer;
+  text-decoration: none;
+  border-radius: 10px;
 }
 
 .image-gallery-container .container .information p {

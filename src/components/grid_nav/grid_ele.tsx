@@ -1,4 +1,5 @@
 import './grid_ele.css'
+import { Link } from 'react-router-dom'
 
 const GridEle = (props: {
   svgLink: string
@@ -10,13 +11,13 @@ const GridEle = (props: {
       <div className="icon">
         <img src={props.svgLink} alt="" />
       </div>
-      <div className="content">
+      <Link className="content" to="/advantage">
         <div className="title">
           <p>{props.contentTitle}</p>
           <img src="images/right.svg" alt="svg-icon" />
         </div>
         <div className="detail">{props.contentDetail}</div>
-      </div>
+      </Link>
     </div>
   )
 }

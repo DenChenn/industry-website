@@ -18,19 +18,22 @@ const Footer = () => {
         </div>
         <div className="feed">
           <div className="topic">聯絡電話</div>
-          <div className="detail">033333333</div>
+          <div className="detail">0935-271-102</div>
         </div>
         <div className="feed">
           <div className="topic">公司地址</div>
-          <div className="detail">地址000000000</div>
+          <div className="detail">
+            Address / No.6-11, Aly. 6, Ln. 810-1, Yong'an Rd., Taoyuan Dist.,
+            Taoyuan City
+          </div>
         </div>
         <div className="feed">
           <div className="topic">email</div>
-          <div className="detail">ddddddddddddd</div>
+          <div className="detail">chenzzzz@ms37.hinet.net</div>
         </div>
         <div className="feed">
           <div className="topic">傳真電話</div>
-          <div className="detail">kkkkkkkkkkkkkk</div>
+          <div className="detail">03-3413875</div>
         </div>
       </div>
     </div>
