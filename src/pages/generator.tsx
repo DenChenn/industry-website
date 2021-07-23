@@ -6,6 +6,7 @@ import LeftImage from '../components/left_image'
 import RightImage from '../components/right_image'
 import ScaleList from '../components/scale_list'
 import Footer from '../components/footer'
+import Paragraph from '../components/paragraph'
 
 const Generator = () => {
   const [isOpen, setOpen] = useState(false)
@@ -73,8 +74,7 @@ const Generator = () => {
       </div>
 
       <div className="section-2">
-        <div className="title">{section2Title}</div>
-        <div className="content">{section2Content}</div>
+        <Paragraph title={section2Title} content={section2Content}></Paragraph>
       </div>
       <div className="section-3">
         <div className="title">臭氧系統介紹</div>
