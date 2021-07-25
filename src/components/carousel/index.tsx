@@ -10,7 +10,7 @@ const ImportCarousel = () => {
           <img src="images/bon.jpeg" alt="#" />
         </div>
         <div>
-          <img src="images/der.png" alt="#" />
+          <img src="images/der.jpg" alt="#" />
         </div>
         <div>
           <img src="images/huan.png" alt="#" />
