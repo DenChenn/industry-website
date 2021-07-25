@@ -7,16 +7,19 @@ const ImportCarousel = () => {
     <div className="c-container">
       <Carousel infiniteLoop useKeyboardArrows autoPlay>
         <div>
-          <img height="auto" src="images/s1.jpg" alt="#" />
-          <p className="legend">甘肅慶陽</p>
+          <img src="images/bon.jpeg" alt="#" />
         </div>
         <div>
-          <img height="auto" src="images/s2.jpg" alt="#" />
-          <p className="legend">江蘇鎮江宏順熱電廠</p>
+          <img src="images/der.png" alt="#" />
         </div>
         <div>
-          <img height="auto" src="images/s4.jpg" alt="#" />
-          <p className="legend">中國巨石集團</p>
+          <img src="images/huan.png" alt="#" />
+        </div>
+        <div>
+          <img src="images/toon.jpeg" alt="#" />
+        </div>
+        <div>
+          <img src="images/paper.jpeg" alt="#" />
         </div>
       </Carousel>
     </div>

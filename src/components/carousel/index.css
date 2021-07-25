@@ -16,7 +16,7 @@
 
 .carousel .slide img {
   height: 75vh; /* change this to whatever you want */
-  width: auto;
+  width: 100%;
 }
 
 .carousel .slide .legend {
