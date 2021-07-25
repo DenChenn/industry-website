@@ -22,9 +22,9 @@ const GridNav = () => {
   svgLinkSet.push('images/fire.svg')
   svgLinkSet.push('images/fluid.svg')
   svgLinkSet.push('images/glass.svg')
-  svgLinkSet.push('images/iron.svg')
-  svgLinkSet.push('images/nono.svg')
   svgLinkSet.push('images/power.svg')
+  svgLinkSet.push('images/nono.svg')
+  svgLinkSet.push('images/iron.svg')
 
   let contentDetailSet: string[] = []
   contentDetailSet.push(

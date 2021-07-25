@@ -67,9 +67,9 @@ const Advantage = () => {
   ]
 
   const thirdRowIcon: Array<string> = [
-    'images/iron.svg',
-    'images/nono.svg',
     'images/power.svg',
+    'images/nono.svg',
+    'images/iron.svg',
   ]
 
   const thirdRowTopic: Array<string> = [
