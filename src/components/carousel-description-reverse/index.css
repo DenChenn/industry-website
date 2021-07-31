@@ -1,0 +1,50 @@
+.carousel-description-reverse-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.carousel-description-reverse-container .description-container {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  background-color: #615f5f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.carousel-description-reverse-container .description-container .title {
+  position: relative;
+  width: 70%;
+  height: 20%;
+  font-size: 3em;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+}
+.carousel-description-reverse-container .description-container .content {
+  position: relative;
+  width: 70%;
+  height: 50%;
+  font-size: 1.4em;
+  color: #ffffff;
+}
+
+@media all and (max-width: 1000px) {
+  .carousel-description-reverse-container {
+    flex-direction: column-reverse;
+  }
+  .carousel-description-reverse-container .description-container {
+    width: 100%;
+    height: 50%;
+  }
+  .carousel-description-reverse-container .description-container .title {
+    font-size: 2.5em;
+  }
+  .carousel-description-reverse-container .description-container .content {
+    font-size: 1em;
+  }
+}

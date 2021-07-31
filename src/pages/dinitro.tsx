@@ -6,6 +6,7 @@ import RightImage from '../components/right_image'
 import Footer from '../components/footer'
 import Paragraph from '../components/paragraph'
 import './dinitro.css'
+import TextAnimation from '../components/text-animation'
 
 const Dinitro = () => {
   const [isOpen, setOpen] = useState(false)
@@ -54,7 +55,9 @@ const Dinitro = () => {
         <div className="logo-container">
           <img width="100%" height="100%" src="images/logo.svg" alt="logo" />
         </div>
-        <div className="content">低溫臭氧脫硝工業系統</div>
+        <div className="content">
+          <TextAnimation title="低溫臭氧脫銷工業系統"></TextAnimation>
+        </div>
         <div className="explore-icon">
           <svg width="100%" height="100%" viewBox="0 0 110 59" fill="none">
             <motion.path

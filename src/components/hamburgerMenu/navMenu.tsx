@@ -103,6 +103,23 @@ const NavMenu = (props: { isOpen: Boolean }) => {
         >
           <Link to="/advantage">九大優點</Link>
         </motion.li>
+        <motion.li
+          className="NavLink"
+          initial={false}
+          animate={props.isOpen ? 'show' : 'hide'}
+          variants={{
+            show: {
+              ...variants.show,
+              transition: { delay: 0.8, duration: 0.2 },
+            },
+            hide: {
+              ...variants.hide,
+              transition: { delay: 0.3, duration: 0.05 },
+            },
+          }}
+        >
+          <Link to="/achievement">工程實績</Link>
+        </motion.li>
       </div>
     </div>
   )

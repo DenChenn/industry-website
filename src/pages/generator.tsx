@@ -7,6 +7,7 @@ import RightImage from '../components/right_image'
 import ScaleList from '../components/scale_list'
 import Footer from '../components/footer'
 import Paragraph from '../components/paragraph'
+import TextAnimation from '../components/text-animation'
 
 const Generator = () => {
   const [isOpen, setOpen] = useState(false)
@@ -55,7 +56,9 @@ const Generator = () => {
         <div className="logo-container">
           <img width="100%" height="100%" src="images/logo.svg" alt="logo" />
         </div>
-        <div className="content">工業級臭氧產生系統</div>
+        <div className="content">
+          <TextAnimation title="工業級臭氧產生系統"></TextAnimation>
+        </div>
         <div className="explore-icon">
           <svg width="100%" height="100%" viewBox="0 0 110 59" fill="none">
             <motion.path

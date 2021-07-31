@@ -104,35 +104,6 @@
   position: relative;
   width: 100%;
   height: 75vh;
-  display: flex;
-  flex-direction: row;
-}
-
-.landing-container .section-3 .description-container {
-  position: relative;
-  width: 50%;
-  height: 100%;
-  background-color: #615f5f;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.landing-container .section-3 .description-container .title {
-  position: relative;
-  width: 70%;
-  height: 20%;
-  font-size: 3em;
-  font-weight: 600;
-  color: #ffffff;
-  text-align: center;
-}
-.landing-container .section-3 .description-container .content {
-  position: relative;
-  width: 70%;
-  height: 50%;
-  font-size: 1.4em;
-  color: #ffffff;
 }
 
 .landing-container .section-4 {
@@ -179,6 +150,12 @@
 .landing-container .section-5 {
   position: relative;
   width: 100%;
+  height: 75vh;
+}
+
+.landing-container .section-6 {
+  position: relative;
+  width: 100%;
   height: 80vh;
   display: flex;
   flex-direction: column;
@@ -213,18 +190,7 @@
     font-size: 1em;
   }
   .landing-container .section-3 {
-    flex-direction: column;
     height: 150vh;
-  }
-  .landing-container .section-3 .description-container {
-    width: 100%;
-    height: 50%;
-  }
-  .landing-container .section-3 .description-container .title {
-    font-size: 2.5em;
-  }
-  .landing-container .section-3 .description-container .content {
-    font-size: 1em;
   }
   .landing-container .section-4 {
     height: 180vh;
@@ -237,5 +203,8 @@
   .landing-container .section-4 .title .content {
     height: 15%;
     font-size: 1em;
+  }
+  .landing-container .section-5 {
+    height: 150vh;
   }
 }

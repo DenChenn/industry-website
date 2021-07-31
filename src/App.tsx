@@ -6,6 +6,7 @@ import Concept from './pages/concept'
 import Advantage from './pages/advantage'
 import { Fragment } from 'react'
 import ScrollToTop from './scroll'
+import Achievement from './pages/achievement'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route path="/generator" component={Generator}></Route>
             <Route path="/concept" component={Concept}></Route>
             <Route path="/advantage" component={Advantage}></Route>
+            <Route path="/achievement" component={Achievement}></Route>
           </Switch>
         </Fragment>
       </div>

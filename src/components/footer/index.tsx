@@ -17,6 +17,10 @@ const Footer = () => {
           <div className="detail">歐珊環保科技股份有限公司</div>
         </div>
         <div className="feed">
+          <div className="topic">聯絡人名稱</div>
+          <div className="detail">陳家盛</div>
+        </div>
+        <div className="feed">
           <div className="topic">聯絡電話</div>
           <div className="detail">0935-271-102</div>
         </div>
