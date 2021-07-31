@@ -35,7 +35,7 @@
 
 @media all and (max-width: 1000px) {
   .carousel-description-container {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   .carousel-description-container .description-container {
     width: 100%;

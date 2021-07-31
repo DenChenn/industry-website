@@ -115,7 +115,7 @@ const Achievement = () => {
           content={sectionContent[2]}
         ></RightImage>
       </div>
-      <div className="section-image-long">
+      <div className="section-image">
         <LeftImage
           imageUrl={sectionImage[2]}
           title={sectionTitle[3]}

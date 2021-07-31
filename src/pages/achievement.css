@@ -114,17 +114,6 @@
   background-color: #ffffff;
 }
 
-.achievement-container .section-image-long {
-  position: relative;
-  width: 100%;
-  height: 70vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #ffffff;
-}
-
 .achievement-container .section-12 {
   position: relative;
   width: 100%;
@@ -159,8 +148,5 @@
   }
   .achievement-container .section-image {
     height: 120vh;
-  }
-  .achievement-container .section-image-long {
-    height: 160vh;
   }
 }
