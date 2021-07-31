@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { useState, useEffect } from 'react'
 import Footer from '../components/footer'
 import Paragraph from '../components/paragraph'
+import TextAnimation from '../components/text-animation'
 
 const Concept = () => {
   const [isOpen, setOpen] = useState(false)
@@ -49,7 +50,9 @@ const Concept = () => {
         <div className="logo-container">
           <img width="100%" height="100%" src="images/logo.svg" alt="logo" />
         </div>
-        <div className="content">工業技術原理說明</div>
+        <div className="content">
+          <TextAnimation title="工業技術原理說明"></TextAnimation>
+        </div>
         <div className="explore-icon">
           <svg width="100%" height="100%" viewBox="0 0 110 59" fill="none">
             <motion.path

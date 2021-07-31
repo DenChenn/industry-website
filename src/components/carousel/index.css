@@ -2,6 +2,8 @@
   position: relative;
   width: 50%;
   height: 100%;
+  background-color: #ffffff;
+  overflow: hidden;
 }
 
 .c-container .carousel {

@@ -5,6 +5,7 @@ import NavBar from '../components/navbar'
 import DemoBar from '../components/demo_bar'
 import Footer from '../components/footer'
 import Paragraph from '../components/paragraph'
+import TextAnimation from '../components/text-animation'
 
 const Advantage = () => {
   const [isOpen, setOpen] = useState(false)
@@ -95,7 +96,9 @@ const Advantage = () => {
         <div className="logo-container">
           <img width="100%" height="100%" src="images/logo.svg" alt="logo" />
         </div>
-        <div className="content">歐珊公司設備九大優點</div>
+        <div className="content">
+          <TextAnimation title="歐珊公司設備九大優點"></TextAnimation>
+        </div>
         <div className="explore-icon">
           <svg width="100%" height="100%" viewBox="0 0 110 59" fill="none">
             <motion.path

@@ -4,8 +4,11 @@ import NavBar from '../components/navbar'
 import { motion } from 'framer-motion'
 import { useEffect, useState, useRef, useLayoutEffect } from 'react'
 import GridNav from '../components/grid_nav'
-import ImportCarousel from '../components/carousel'
 import Footer from '../components/footer'
+import CarouselDescription from '../components/carousel-description'
+import CarouselDescriptionReverse from '../components/carousel-description-reverse'
+import TextAnimation from '../components/text-animation'
+
 const Landing = () => {
   const [isOpen, setOpen] = useState(false)
 
@@ -38,14 +41,17 @@ const Landing = () => {
   const [sec2Open, setSec2Open] = useState(false)
   const [sec3Open, setSec3Open] = useState(false)
   const [sec4Open, setSec4Open] = useState(false)
+  const [sec5Open, setSec5Open] = useState(false)
   const sec2Ref = useRef<HTMLDivElement>(null)
   const sec3Ref = useRef<HTMLDivElement>(null)
   const sec4Ref = useRef<HTMLDivElement>(null)
+  const sec5Ref = useRef<HTMLDivElement>(null)
 
   useLayoutEffect(() => {
     const sec2TopPos = sec2Ref.current?.getBoundingClientRect().top
     const sec3TopPos = sec3Ref.current?.getBoundingClientRect().top
     const sec4TopPos = sec4Ref.current?.getBoundingClientRect().top
+    const sec5TopPos = sec5Ref.current?.getBoundingClientRect().top
 
     const onScroll = () => {
       const scrollPosition = window.scrollY + window.innerHeight
@@ -64,6 +70,11 @@ const Landing = () => {
       if (sec4Ref != null) {
         if (sec4TopPos && sec4TopPos < scrollPosition) {
           setSec4Open(true)
+        }
+      }
+      if (sec5Ref != null) {
+        if (sec5TopPos && sec5TopPos < scrollPosition) {
+          setSec5Open(true)
         }
       }
     }
@@ -102,7 +113,9 @@ const Landing = () => {
         <div className="logo-container">
           <img width="100%" height="100%" src="images/logo.svg" alt="logo" />
         </div>
-        <div className="content">歐珊環保科技股份有限公司</div>
+        <div className="content">
+          <TextAnimation title="歐珊環保科技股份有限公司"></TextAnimation>
+        </div>
         <div className="explore-icon">
           <svg width="100%" height="100%" viewBox="0 0 110 59" fill="none">
             <motion.path
@@ -134,25 +147,12 @@ const Landing = () => {
         <ImageGallery></ImageGallery>
       </div>
       <div className="section-3" ref={sec3Ref}>
-        <div className="description-container">
-          <motion.div
-            className="title"
-            animate={sec3Open ? 'open' : 'closed'}
-            variants={sectionVariant}
-            transition={sectionTransition}
-          >
-            合作夥伴
-          </motion.div>
-          <motion.div
-            className="content"
-            animate={sec3Open ? 'open' : 'closed'}
-            variants={sectionVariant}
-            transition={sectionDelayTransition}
-          >
-            歐珊掌握國際上最先進的放電技術、臭氧低溫氧化脫硝處理，一直是環保技術領域的翹楚。廣源造紙股份有限公司、大統新創股份有限公司、寶結實業股份有限公司、環泰科技股份有限公司、得力實業股份有限公司等等，皆與歐珊建立堅實的商業合作關係。歐珊在臺灣有許多的合作夥伴，以最專業的態度滿足客戶對於"環保、節能、效率"的追求。
-          </motion.div>
-        </div>
-        <ImportCarousel />
+        <CarouselDescription
+          secOpen={sec3Open}
+          variants={sectionVariant}
+          transition={sectionTransition}
+          delayTransition={sectionDelayTransition}
+        />
       </div>
       <div className="section-4" ref={sec4Ref}>
         <motion.div
@@ -166,7 +166,15 @@ const Landing = () => {
         </motion.div>
         <GridNav></GridNav>
       </div>
-      <div className="section-5">
+      <div className="section-5" ref={sec5Ref}>
+        <CarouselDescriptionReverse
+          secOpen={sec5Open}
+          variants={sectionVariant}
+          transition={sectionTransition}
+          delayTransition={sectionDelayTransition}
+        />
+      </div>
+      <div className="section-6">
         <Footer></Footer>
       </div>
     </div>
